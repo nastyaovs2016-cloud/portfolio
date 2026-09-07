@@ -15,6 +15,34 @@
       "metric_ru": "4 AI-воркфлоу в продакшне"
     },
     {
+      "slug": "playbook-editor",
+      "protected": true,
+      "cover": "images/projects/playbook-editor/cover.png",
+      "client": "Confidential",
+      "category": "SaaS · Redesign",
+      "year": "2025-26",
+      "name_en": "Playbook Editor",
+      "name_ru": "Редактор плейбуков",
+      "summary_en": "A visual editor that replaced a code-based form for building automated security response playbooks — add, connect, and configure steps on a canvas.",
+      "summary_ru": "Визуальный редактор, заменивший кодовую форму для сборки автоматизированных сценариев реагирования: добавляй, связывай и настраивай шаги на холсте.",
+      "metric_en": null,
+      "metric_ru": null
+    },
+    {
+      "slug": "playbook-test-run",
+      "protected": true,
+      "cover": "images/projects/playbook-test-run/08-final.png",
+      "client": "Confidential",
+      "category": "SaaS · UX research",
+      "year": "2025-26",
+      "name_en": "Playbook Test Run",
+      "name_ru": "Тестовый запуск плейбука",
+      "summary_en": "A UX research case: I owned the study end-to-end and made the playbook test-run flow safe, clear, and predictable for SOC analysts.",
+      "summary_ru": "UX-исследование: я полностью вела ресёрч и сделала тестовый запуск плейбука безопасным, понятным и предсказуемым для SOC-аналитиков.",
+      "metric_en": "0 usability errors in the final prototype",
+      "metric_ru": "0 ошибок юзабилити в финале"
+    },
+    {
       "slug": "geoanalytics",
       "protected": false,
       "cover": "images/projects/geoanalytics/cover.png",
