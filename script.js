@@ -123,7 +123,7 @@
         </div>
         <div class="card__body">
           <div class="card__meta">
-            <span class="mono">${escapeHtml(item.client)} · ${escapeHtml(item.category)}</span>
+            <span class="mono">${[item.client, item.category].filter(Boolean).map(escapeHtml).join(' · ')}</span>
             ${lockHtml}
           </div>
           <h3 class="card__name">${escapeHtml(name)}</h3>

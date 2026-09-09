@@ -921,7 +921,7 @@ h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; }
 }
 
 .case-v2__lead {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--color-text-muted);
   line-height: 1.55;
   max-width: 900px;
@@ -1762,7 +1762,12 @@ h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; }
 .compare__badge--good { background: #E7F4EE; color: #1E7A4E; }
 
 /* Stat variants */
-.statrow--bare { gap: 24px; }
+.statrow--bare {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 56px;
+  grid-template-columns: none;
+}
 .statrow--bare .stat { background: none; border: none; padding: 0; }
 .stat__num--text { font-size: clamp(19px, 2.1vw, 26px); }
 
@@ -1878,3 +1883,9 @@ h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; }
   .flow__arrow { display: none; }
   .flow__step { flex: 1 1 100%; }
 }
+
+/* Hero paragraph keeps the larger size; grey text inside sections stays 14px */
+.case-v2 > .case-v2__lead { font-size: 16px; }
+
+/* Research setup plaques: number and word labels share one size */
+.statrow--bare .stat__num { font-size: 32px; }
