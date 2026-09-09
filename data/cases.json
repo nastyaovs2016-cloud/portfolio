@@ -1,6 +1,20 @@
 {
   "selected": [
     {
+      "slug": "asset-management",
+      "protected": true,
+      "cover": "images/projects/asset-management/cover.png",
+      "client": "Kaspersky",
+      "category": "Platform · Architecture",
+      "year": "2025-26",
+      "name_en": "Asset Management",
+      "name_ru": "Управление активами",
+      "summary_en": "Aligning five product teams around one scalable asset experience — without a dedicated platform product owner.",
+      "summary_ru": "Согласование пяти продуктовых команд вокруг одного масштабируемого решения по активам — без выделенного владельца платформы.",
+      "metric_en": "5 product teams · 1 shared platform experience",
+      "metric_ru": "5 продуктовых команд · 1 общий платформенный раздел"
+    },
+    {
       "slug": "ai-assistance",
       "protected": true,
       "cover": "images/projects/ai-assistance/cover.svg",
@@ -41,7 +55,9 @@
       "summary_ru": "UX-исследование: я полностью вела ресёрч и сделала тестовый запуск плейбука безопасным, понятным и предсказуемым для SOC-аналитиков.",
       "metric_en": "0 usability errors in the final prototype",
       "metric_ru": "0 ошибок юзабилити в финале"
-    },
+    }
+  ],
+  "other": [
     {
       "slug": "geoanalytics",
       "protected": false,
@@ -97,9 +113,7 @@
       "summary_ru": "Сервис бронирования переговорных комнат в офисах Рамблера.",
       "metric_en": null,
       "metric_ru": null
-    }
-  ],
-  "other": [
+    },
     {
       "slug": "management-accounting",
       "protected": false,

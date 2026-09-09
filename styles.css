@@ -1769,3 +1769,112 @@ h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; }
 /* Consistent breathing room around screenshots inside a numbered section
    (the top-of-page hero is a direct child of main, so it is unaffected) */
 .case-v2__section .case__hero { margin-top: 28px; margin-bottom: 32px; }
+
+/* ---------------------------------------------------------------------------
+   Placeholder panel — stands in for a case screenshot that does not exist yet.
+   To use a real image, replace the whole <div class="case-ph">…</div> block
+   with <img src="../images/projects/<slug>/<file>" alt="…">.
+   --------------------------------------------------------------------------- */
+.case-ph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  aspect-ratio: 16 / 9;
+  padding: 24px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 0.5px dashed var(--color-border);
+  border-radius: 10px;
+  background-color: var(--color-surface);
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(51, 94, 221, 0.035) 0 8px,
+    transparent 8px 16px
+  );
+}
+.case-ph__label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  opacity: 0.75;
+}
+.case-ph__text {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  max-width: 420px;
+}
+/* The panel already draws its own frame, so drop the wrapper's duplicate one */
+.subsection__images:has(.case-ph),
+.howto__media:has(.case-ph),
+.compare__media:has(.case-ph),
+.case__hero:has(.case-ph) {
+  border: 0;
+  background: none;
+}
+
+@media (max-width: 767px) {
+  .case-ph { aspect-ratio: 4 / 3; padding: 18px; }
+}
+
+/* ---------------------------------------------------------------------------
+   Process / timeline chain: step → step → step
+   --------------------------------------------------------------------------- */
+.flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 8px;
+  margin: 16px 0 0;
+}
+.flow__step {
+  flex: 1 1 160px;
+  min-width: 0;
+  background: var(--color-surface);
+  border: 0.5px solid var(--color-border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.flow__step--start {
+  border-color: var(--color-accent);
+  background: #F4F7FE;
+}
+.flow__note {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  margin-bottom: 6px;
+}
+.flow__label {
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+.flow__arrow {
+  align-self: center;
+  flex: 0 0 auto;
+  color: var(--color-border);
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Caption under a figure or diagram */
+.figcap {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  margin-top: 10px;
+  max-width: 820px;
+}
+
+@media (max-width: 767px) {
+  .flow__arrow { display: none; }
+  .flow__step { flex: 1 1 100%; }
+}
